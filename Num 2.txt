@@ -1,0 +1,24 @@
+// -*- Coding Problems: -*-
+"""
+
+Created on Fri Oct 6 2022 22:01:20
+@author: Vaibhav
+
+"""
+
+// Vaibhav Patil
+// SSBT COET
+// Mathematics
+// From: LEETCODE
+// NUM 1 Factorial Trailing Zeroes / Trailing Zeros in Factorial
+
+
+class Solution {
+    public int trailingZeroes(int n) {
+        int res =0;
+        
+        for(int i=5;i<=n;i*=5) {
+            res = res + n/i;
+        }
+        return res;} 
+}
